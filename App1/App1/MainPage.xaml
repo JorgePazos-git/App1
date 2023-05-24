@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#1E1E1E">
+        <StackLayout BackgroundColor="#191970" Padding="10">
+            <Label Text="TAREA 2. Calculadora - Pazos Jorge"
+               TextColor="White"
+               FontSize="20"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        </StackLayout>
+
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label x:Name="ResultLabel"
+               Text="0"
+               FontSize="28"
+               TextColor="White"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               Margin="10,0" />
+
+            <Grid Grid.Row="1"
+              Margin="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Text="7"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Text="8"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="0"
+                    Grid.Column="2"
+                    Text="9"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="0"
+                    Grid.Column="3"
+                    Text="/"
+                    FontSize="24"
+                    BackgroundColor="#FF7043"
+                    TextColor="White"
+                    Clicked="OnOperationButtonClicked" />
+
+                <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="4"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="5"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="1"
+                    Grid.Column="2"
+                    Text="6"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="1"
+                    Grid.Column="3"
+                    Text="*"
+                    FontSize="24"
+                    BackgroundColor="#FF7043"
+                    TextColor="White"
+                    Clicked="OnOperationButtonClicked" />
+
+                <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Text="1"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Text="2"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="2"
+                    Grid.Column="2"
+                    Text="3"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="2"
+                    Grid.Column="3"
+                    Text="-"
+                    FontSize="24"
+                    BackgroundColor="#FF7043"
+                    TextColor="White"
+                    Clicked="OnOperationButtonClicked" />
+
+                <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Text="C"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnClearButtonClicked" />
+
+                <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Text="0"
+                    FontSize="24"
+                    BackgroundColor="#424242"
+                    TextColor="White"
+                    Clicked="OnNumberButtonClicked" />
+
+                <Button Grid.Row="3"
+                    Grid.Column="2"
+                    Text="="
+                    FontSize="24"
+                    BackgroundColor="#00E676"
+                    TextColor="White"
+                    Clicked="OnEqualButtonClicked" />
+
+                <Button Grid.Row="3"
+                    Grid.Column="3"
+                    Text="+"
+                    FontSize="24"
+                    BackgroundColor="#FF7043"
+                    TextColor="White"
+                    Clicked="OnOperationButtonClicked" />
+            </Grid>
+        </Grid>
+    </StackLayout>
+</ContentPage>
